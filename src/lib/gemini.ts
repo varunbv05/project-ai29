@@ -1,6 +1,6 @@
 import type { Revision } from "@/components/RevisionResult";
 
-const GEMINI_API_KEY = "AIzaSyDc2dD3Dry8KjO2raDKFVMU-3ci8rfrXqc";
+const GEMINI_API_KEY = import.meta.env.VITE_GEMINI_API_KEY;
 const GEMINI_URL = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${GEMINI_API_KEY}`;
 
 const SYSTEM_PROMPT = `You are Recall5 AI, an elite study coach. You produce concise, exam-ready 5-minute revisions.
